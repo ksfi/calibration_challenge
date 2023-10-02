@@ -5,7 +5,7 @@ Lastly I did the [Comma AI calibration challenge](https://github.com/commaai/cal
 Here's the pipeline:
 
 
-I'm using a [SLAM algorithm](https://github.com/stella-cv/stella_vslam) (see slam/run/src/calbration_challenge_slam.cc) to get the accumulated [pose](https://en.wikipedia.org/wiki/Pose_(computer_vision) over the video.
+I'm using a [SLAM algorithm](https://github.com/stella-cv/stella_vslam) (see slam/run/src/calbration_challenge_slam.cc) to get the accumulated [pose](https://en.wikipedia.org/wiki/Pose_(computer_vision)) over the video.
 I'm adding [yolov8](https://github.com/ultralytics/ultralytics) to the SLAM pipeline to [infer and mask dynamic objects](https://www.sciencedirect.com/science/article/pii/S2214914720304402) as much as possible from features extraction.
 
 
