@@ -1,4 +1,4 @@
-[Comma AI calibration challenge](https://github.com/commaai/calib_challenge).
+[Comma AI calibration challenge](https://github.com/commaai/calib_challenge)
 
 
 
