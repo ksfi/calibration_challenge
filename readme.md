@@ -1,4 +1,4 @@
-Lastly I did the [Comma AI calibration challenge](https://github.com/commaai/calib_challenge).
+[Comma AI calibration challenge](https://github.com/commaai/calib_challenge).
 
 
 
@@ -15,9 +15,6 @@ to get the initial pose I'm computing the pitch and yaw offsets via the vanishin
 
 
 I believe I could estimate the distortion coefficients of the camera for more accurate results, I infered the depth of the frames for a video but with poor results.
-
-
-I saw you prefer using static typing hints so I added mypy coverage afterward (--check-untyped-defs).
 
 
 I've achieved below 10% of error on the labeled set and a poor 33% on the unlabeled set, good enough for the Comma team to accept it though.
