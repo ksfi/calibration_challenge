@@ -7,8 +7,8 @@ from scipy.spatial.transform import Rotation
 
 from typing import Tuple, List, Any, IO, Dict
 
-FILE_KF: str = "slam/run/build/keyframe_trajectory.txt"
-FILE_F: str = "slam/run/build/frame_trajectory.txt"
+FILE_KF: str = "slam/build/keyframe_trajectory.txt"
+FILE_F: str = "slam/build/frame_trajectory.txt"
 kf: bool = False
 try:
     DATAS: np.ndarray = np.loadtxt(FILE_KF) if kf else np.loadtxt(FILE_F)
