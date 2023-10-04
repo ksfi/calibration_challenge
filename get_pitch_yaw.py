@@ -64,8 +64,8 @@ def calib_challenge(coordvp: List[float], video_id: int, complete_from_begin: in
         pitch: List[float] = []
         yaw: List[float] = []
         for l in DATAS:
-            quat: np.ndarray = l[-4:]
-            t_wc: np.ndarray = l[1:4] if kf else l[2:5]
+            quat: List[float] = l[-4:]
+            t_wc: List[float] = l[1:4] if kf else l[2:5]
             R: Any = Rotation.from_quat(quat)
             rotations.append(R)
             translations.append(t_wc)
