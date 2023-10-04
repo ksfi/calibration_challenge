@@ -17,7 +17,7 @@ except:
     print(ret_error_msg)
     exit()
 
-ts_idx: Dict = dict() # map the timestamp of the key frame to the index of the frame for extrapolation
+ts_idx: Dict = dict() # map the timestamp of the key frame to the index of the frame for interpolation
 for l in np.loadtxt(FILE_F):
     ts_idx[l[1]] = int(l[0])
 
@@ -89,7 +89,7 @@ def calib_challenge(coordvp: List[float], video_id: int, complete_from_begin: in
         if plot:
             plot_g()
 
-        def extrapolation() -> None:
+        def interpolation() -> None:
             '''
             when using key frames
             '''
