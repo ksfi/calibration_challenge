@@ -48,10 +48,10 @@ def calib_challenge(coordvp: List[float], video_id: int, complete_from_begin: in
             img_pts_normalized[(img_pts < 0).any(axis=1)] = np.nan
             return img_pts_normalized[:, :2].reshape(input_shape)
         def get_calib_from_vp(vp: List[float]) -> Tuple[float, float]:
-            vp_norm = normalize(vp)
-            yaw_calib = np.arctan(vp_norm[0])
-            pitch_calib = -np.arctan(vp_norm[1]*np.cos(yaw_calib))
-            roll_calib = 0
+            vp_norm: np.ndarray = normalize(vp)
+            yaw_calib: float = np.arctan(vp_norm[0])
+            pitch_calib: float = -np.arctan(vp_norm[1]*np.cos(yaw_calib))
+            roll_calib: float = 0
             return pitch_calib, yaw_calib
         return get_calib_from_vp(vp)
 
