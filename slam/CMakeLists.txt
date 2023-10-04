@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
-project(stella_vslam_examples LANGUAGES CXX C)
+project(slam LANGUAGES CXX C)
 
 # ----- Find dependencies -----
 
