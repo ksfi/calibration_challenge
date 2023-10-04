@@ -19,7 +19,7 @@ except:
 
 ts_idx: Dict = dict() # map the timestamp of the key frame to the index of the frame for extrapolation
 for l in np.loadtxt(FILE_F):
-    ts_idx[l[1]] = int(l[0]-221)
+    ts_idx[l[1]] = int(l[0])
 
 eon_f_focal_length: int = 910
 eon_f_frame_size: Tuple[int, int] = (1164, 874)
